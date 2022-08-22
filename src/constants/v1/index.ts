@@ -5,7 +5,7 @@ import V1_FACTORY_ABI from './v1_factory.json'
 
 const V1_FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0xB9e375643d1BE51492de44F6b93a5DFCeBa63F47', // TODO
-  [ChainId.KAITESTNET]: '0xB9e375643d1BE51492de44F6b93a5DFCeBa63F47'
+ // [ChainId.BSCTESTNET]: ''
 }
 
 const V1_FACTORY_INTERFACE = new Interface(V1_FACTORY_ABI)
