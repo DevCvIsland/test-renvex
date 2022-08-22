@@ -4,7 +4,7 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 // import { bsc, fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 import { injected, bsc } from '../connectors'
 // TODO
-export const ROUTER_ADDRESS = '0x016991e09911C56FBc824b8d9598181bD9b69Aaf'
+export const ROUTER_ADDRESS = '0x016991e09911C24FBc824b8d9598181bD9b69Aaf'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -14,8 +14,8 @@ type ChainTokenList = {
 export const DAI = new Token(ChainId.MAINNET, '0x54bd3EaCd8977405F3e23FCfF36a1219c4bEb714', 18, 'DAI', 'Renvex-Peg DAI Token')
 export const BUSD = new Token(ChainId.MAINNET, '0x5cC34132218dd21e5d12B2A100444B1812E9c754', 18, 'BUSD', 'Renvex-Peg BUSD Token')
 export const USDT = new Token(ChainId.MAINNET, '0x4de3fc743895368Bcba2F8a7BA52b3643dC96C28', 18, 'USDT', 'Renvex-Peg USDT Token')
-export const EOS = new Token(ChainId.MAINNET, '0x5cC34132218dd21e5d12B2A100444B1812E9c754', 18, 'USDC', 'Renvex-Peg USDC Token')
-export const DOT = new Token(ChainId.MAINNET, '0x9e00EC1C674B90bf01Bc9f1e20510AFFBFF32452', 18, 'BTC', 'Renvex-Peg BTC Token')
+export const USDC = new Token(ChainId.MAINNET, '0x5cC34132218dd21e5d12B2A100444B1812E9c754', 18, 'USDC', 'Renvex-Peg USDC Token')
+export const BTC = new Token(ChainId.MAINNET, '0x9e00EC1C674B90bf01Bc9f1e20510AFFBFF32452', 18, 'BTC', 'Renvex-Peg BTC Token')
 export const ETH = new Token(ChainId.MAINNET, '0x5cC34132218dd21e5d12B2A100444B1812E9c754', 18, 'ETH', 'Renvex-Peg ETH Token')
 
 const WETH_ONLY: ChainTokenList = {
@@ -55,7 +55,7 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
   [ChainId.MAINNET]: [
     [
       new Token(ChainId.MAINNET, '0x99799eb17850c8611c89878de2EB463169b8ee59', 18, 'REN', 'Renvex Token'),
-      new Token(ChainId.MAINNET, '0xAF984E23EAA3E7967F3C5E007fbe397D8566D23d', 18, 'WKAI', 'Wrapped KAI')
+      new Token(ChainId.MAINNET, '0xAF984E23EAA3E7967F3C5E007fbe397D8246D23d', 18, 'WKAI', 'Wrapped KAI')
     ],
     [BUSD, USDT],
     [DAI, USDT]
